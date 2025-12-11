@@ -191,6 +191,20 @@
               data: geojson
           });
 
+          map.addLayer({
+            "id": "prepath",
+            "type": "line",
+            "source": "prepath",
+            "layout": {
+              "line-join": "round",
+              "line-cap": "round"
+            },
+            "paint": {
+              "line-color": "#FF0000",
+              "line-width": 8
+            }
+          });
+
           // Add the rocket symbol layer to the map.
           map.addLayer({
             "id": "iss",
